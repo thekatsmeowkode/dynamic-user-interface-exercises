@@ -1,9 +1,23 @@
 * {
-    margin:0;
-    padding:0;
     box-sizing:border-box;
 }
 
 .container {
-    position:relative
+    position:relative;
+    margin:auto;
+    max-width:1000px
 }
+
+.slide {
+    display:none;
+}
+
+.previous, .next {
+    position:absolute;
+    top:50%;
+    width:auto;
+    cursor:pointer;
+    padding:20px;
+}
+
+.next {right:0}
