@@ -30,14 +30,14 @@
             <img src="DALL·E 2022-11-11 15.12.27 - spring landscape .png">
             <div class="caption">Spring landscape</div>
         </div>
-        <a class="previous">&#10094</a>
-        <a class="next">&#10095</a>
+        <a class="previous" onclick="advanceSlide(-1)">&#10094</a>
+        <a class="next" onclick="advanceSlide(1)">&#10095</a>
     </div>
     <div class="breadcrumbs">
-        <span class="dot" data-season="sum"></span>
-        <span class="dot" data-season="fall"></span>
-        <span class="dot" data-season="win"></span>
-        <span class="dot" data-season="spr"></span>
+        <span class="dot" data-season="sum" onclick="currentSlide(1)"></span>
+        <span class="dot" data-season="fall" onclick="currentSlide(2)"></span>
+        <span class="dot" data-season="win" onclick="currentSlide(3)"></span>
+        <span class="dot" data-season="spr" onclick="currentSlide(4)"></span>
     </div>
 </body>
 </html>

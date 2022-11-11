@@ -10,6 +10,22 @@
 
 .slide {
     display:none;
+    animation-name:fade;
+    animation-duration: 1s;
+    padding:0
+}
+
+.breadcrumbs {
+    display:flex;
+    flex-direction:center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
 }
 
 .previous, .next {
@@ -21,3 +37,37 @@
 }
 
 .next {right:0}
+
+.caption {
+    position:absolute;
+    bottom:8px;
+    color:white;
+    font-weight:800;
+    text-align:center;
+    padding:12px;
+    font-size:20px;
+}
+
+.numText {
+    position:absolute;
+    top:0;
+    color:white;
+    font-weight:800;
+    padding:10px;
+    font-size:20px;
+}
+
+.dot {
+    cursor:pointer;
+    height:20px;
+    width:20px;
+    margin:0 px;
+    border-radius:50%;
+    display:inline-block;
+    background-color:black;
+    transition: 0.6 ease
+}
+
+.dot:hover, .active {
+    background-color:gray;
+}
